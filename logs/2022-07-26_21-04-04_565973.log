@@ -1,0 +1,42 @@
+2022-07-26 21:04:04.568 | INFO     | config:print_args:49 - K = 1024
+2022-07-26 21:04:04.571 | INFO     | config:print_args:49 - T = 0.07
+2022-07-26 21:04:04.574 | INFO     | config:print_args:49 - adam_epsilon = 1e-08
+2022-07-26 21:04:04.576 | INFO     | config:print_args:49 - alpha = 5
+2022-07-26 21:04:04.580 | INFO     | config:print_args:49 - bart_lr = 0.0001
+2022-07-26 21:04:04.582 | INFO     | config:print_args:49 - batch_size = 4
+2022-07-26 21:04:04.584 | INFO     | config:print_args:49 - checkpoint_path = checkpoints/
+2022-07-26 21:04:04.586 | INFO     | config:print_args:49 - chunk_nums = 30
+2022-07-26 21:04:04.589 | INFO     | config:print_args:49 - content_max_len = 152
+2022-07-26 21:04:04.591 | INFO     | config:print_args:49 - data_dir = data/
+2022-07-26 21:04:04.593 | INFO     | config:print_args:49 - epochs = 1
+2022-07-26 21:04:04.595 | INFO     | config:print_args:49 - eval_interval = 2500
+2022-07-26 21:04:04.596 | INFO     | config:print_args:49 - generate_max_len = 70
+2022-07-26 21:04:04.596 | INFO     | config:print_args:49 - gradient_accumulation_steps = 4
+2022-07-26 21:04:04.596 | INFO     | config:print_args:49 - json_path = bart-base-chinese/config.json
+2022-07-26 21:04:04.596 | INFO     | config:print_args:49 - log_interval = 50
+2022-07-26 21:04:04.596 | INFO     | config:print_args:49 - log_path = logs/
+2022-07-26 21:04:04.596 | INFO     | config:print_args:49 - m = 0.999
+2022-07-26 21:04:04.596 | INFO     | config:print_args:49 - max_clip_norm = 1.0
+2022-07-26 21:04:04.614 | INFO     | config:print_args:49 - max_len = 184
+2022-07-26 21:04:04.616 | INFO     | config:print_args:49 - mlp = False
+2022-07-26 21:04:04.619 | INFO     | config:print_args:49 - pooling = last-avg
+2022-07-26 21:04:04.621 | INFO     | config:print_args:49 - pretrained_model_path = bart-base-chinese/
+2022-07-26 21:04:04.623 | INFO     | config:print_args:49 - repetition_penalty = 1.2
+2022-07-26 21:04:04.625 | INFO     | config:print_args:49 - save_settings = <bound method Args.save_settings of {'data_dir': 'data/', 'pretrained_model_path': 'bart-base-chinese/', 'vocab_path': 'bart-base-chinese/', 'json_path': 'bart-base-chinese/config.json', 'checkpoint_path': 'checkpoints/', 'log_path': 'logs/', 'seed': 2020, 'batch_size': 4, 'max_len': 184, 'content_max_len': 152, 'summary_max_len': 32, 'epochs': 1, 'bart_lr': 0.0001, 'warmup_steps': 10000, 'weight_decay': 0.01, 'adam_epsilon': 1e-08, 'max_clip_norm': 1.0, 'gradient_accumulation_steps': 4, 'eval_interval': 2500, 'log_interval': 50, 'alpha': 5, 'K': 1024, 'm': 0.999, 'T': 0.07, 'mlp': False, 'pooling': 'last-avg', 'chunk_nums': 30, 'generate_max_len': 70, 'repetition_penalty': 1.2, 'top_k': 5, 'top_p': 0.95}>
+2022-07-26 21:04:04.625 | INFO     | config:print_args:49 - seed = 2020
+2022-07-26 21:04:04.625 | INFO     | config:print_args:49 - summary_max_len = 32
+2022-07-26 21:04:04.634 | INFO     | config:print_args:49 - top_k = 5
+2022-07-26 21:04:04.634 | INFO     | config:print_args:49 - top_p = 0.95
+2022-07-26 21:04:04.634 | INFO     | config:print_args:49 - vocab_path = bart-base-chinese/
+2022-07-26 21:04:04.634 | INFO     | config:print_args:49 - warmup_steps = 10000
+2022-07-26 21:04:04.634 | INFO     | config:print_args:49 - weight_decay = 0.01
+2022-07-26 21:04:06.919 | INFO     | __main__:train:65 - 
+
+2022-07-26 21:04:06.921 | INFO     | __main__:train:66 - ***** Running training *****
+2022-07-26 21:04:06.924 | INFO     | __main__:train:67 -   Num Epochs = 1
+2022-07-26 21:04:06.926 | INFO     | __main__:train:69 -   Total train batch size (w. parallel, distributed & accumulation) = 4
+2022-07-26 21:04:06.929 | INFO     | __main__:train:70 -   Type of optimizer = AdamW
+2022-07-26 21:04:06.931 | INFO     | __main__:train:72 -   Learning rate = 0.0001
+2022-07-26 21:04:06.933 | INFO     | __main__:train:73 - 
+
+2022-07-26 21:04:06.937 | INFO     | processing.dataset:_load_and_cache_examples:43 - Loading examples from cache file data/cache/train_set/train_0.pkl

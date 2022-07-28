@@ -1,0 +1,65 @@
+2022-07-26 21:07:45.604 | INFO     | config:print_args:49 - K = 1024
+2022-07-26 21:07:45.608 | INFO     | config:print_args:49 - T = 0.07
+2022-07-26 21:07:45.610 | INFO     | config:print_args:49 - adam_epsilon = 1e-08
+2022-07-26 21:07:45.613 | INFO     | config:print_args:49 - alpha = 5
+2022-07-26 21:07:45.615 | INFO     | config:print_args:49 - bart_lr = 0.0001
+2022-07-26 21:07:45.618 | INFO     | config:print_args:49 - batch_size = 4
+2022-07-26 21:07:45.621 | INFO     | config:print_args:49 - checkpoint_path = checkpoints/
+2022-07-26 21:07:45.623 | INFO     | config:print_args:49 - chunk_nums = 30
+2022-07-26 21:07:45.625 | INFO     | config:print_args:49 - content_max_len = 152
+2022-07-26 21:07:45.628 | INFO     | config:print_args:49 - data_dir = data/
+2022-07-26 21:07:45.630 | INFO     | config:print_args:49 - epochs = 1
+2022-07-26 21:07:45.632 | INFO     | config:print_args:49 - eval_interval = 2500
+2022-07-26 21:07:45.634 | INFO     | config:print_args:49 - generate_max_len = 70
+2022-07-26 21:07:45.637 | INFO     | config:print_args:49 - gradient_accumulation_steps = 4
+2022-07-26 21:07:45.639 | INFO     | config:print_args:49 - json_path = bart-base-chinese/config.json
+2022-07-26 21:07:45.641 | INFO     | config:print_args:49 - log_interval = 50
+2022-07-26 21:07:45.643 | INFO     | config:print_args:49 - log_path = logs/
+2022-07-26 21:07:45.645 | INFO     | config:print_args:49 - m = 0.999
+2022-07-26 21:07:45.648 | INFO     | config:print_args:49 - max_clip_norm = 1.0
+2022-07-26 21:07:45.650 | INFO     | config:print_args:49 - max_len = 184
+2022-07-26 21:07:45.652 | INFO     | config:print_args:49 - mlp = False
+2022-07-26 21:07:45.654 | INFO     | config:print_args:49 - pooling = last-avg
+2022-07-26 21:07:45.656 | INFO     | config:print_args:49 - pretrained_model_path = bart-base-chinese/
+2022-07-26 21:07:45.658 | INFO     | config:print_args:49 - repetition_penalty = 1.2
+2022-07-26 21:07:45.660 | INFO     | config:print_args:49 - save_settings = <bound method Args.save_settings of {'data_dir': 'data/', 'pretrained_model_path': 'bart-base-chinese/', 'vocab_path': 'bart-base-chinese/', 'json_path': 'bart-base-chinese/config.json', 'checkpoint_path': 'checkpoints/', 'log_path': 'logs/', 'seed': 2020, 'batch_size': 4, 'max_len': 184, 'content_max_len': 152, 'summary_max_len': 32, 'epochs': 1, 'bart_lr': 0.0001, 'warmup_steps': 10000, 'weight_decay': 0.01, 'adam_epsilon': 1e-08, 'max_clip_norm': 1.0, 'gradient_accumulation_steps': 4, 'eval_interval': 2500, 'log_interval': 50, 'alpha': 5, 'K': 1024, 'm': 0.999, 'T': 0.07, 'mlp': False, 'pooling': 'last-avg', 'chunk_nums': 30, 'generate_max_len': 70, 'repetition_penalty': 1.2, 'top_k': 5, 'top_p': 0.95}>
+2022-07-26 21:07:45.663 | INFO     | config:print_args:49 - seed = 2020
+2022-07-26 21:07:45.665 | INFO     | config:print_args:49 - summary_max_len = 32
+2022-07-26 21:07:45.668 | INFO     | config:print_args:49 - top_k = 5
+2022-07-26 21:07:45.670 | INFO     | config:print_args:49 - top_p = 0.95
+2022-07-26 21:07:45.672 | INFO     | config:print_args:49 - vocab_path = bart-base-chinese/
+2022-07-26 21:07:45.674 | INFO     | config:print_args:49 - warmup_steps = 10000
+2022-07-26 21:07:45.677 | INFO     | config:print_args:49 - weight_decay = 0.01
+2022-07-26 21:07:48.221 | INFO     | __main__:train:65 - 
+
+2022-07-26 21:07:48.223 | INFO     | __main__:train:66 - ***** Running training *****
+2022-07-26 21:07:48.226 | INFO     | __main__:train:67 -   Num Epochs = 1
+2022-07-26 21:07:48.228 | INFO     | __main__:train:69 -   Total train batch size (w. parallel, distributed & accumulation) = 4
+2022-07-26 21:07:48.231 | INFO     | __main__:train:70 -   Type of optimizer = AdamW
+2022-07-26 21:07:48.234 | INFO     | __main__:train:72 -   Learning rate = 0.0001
+2022-07-26 21:07:48.235 | INFO     | __main__:train:73 - 
+
+2022-07-26 21:07:48.240 | INFO     | processing.dataset:_load_and_cache_examples:43 - Loading examples from cache file data/cache/train_set/train_0.pkl
+2022-07-26 21:07:51.279 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:    0 | mle_loss: 4.848139 | cl_loss: 4.961254 | loss: 29.654409
+2022-07-26 21:07:59.779 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:   50 | mle_loss: 6.860234 | cl_loss: 5.343948 | loss: 33.579979
+2022-07-26 21:08:07.189 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  100 | mle_loss: 6.958094 | cl_loss: 5.380522 | loss: 33.860699
+2022-07-26 21:08:14.467 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  150 | mle_loss: 6.868782 | cl_loss: 5.389771 | loss: 33.817635
+2022-07-26 21:08:21.772 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  200 | mle_loss: 6.727909 | cl_loss: 5.267119 | loss: 33.063515
+2022-07-26 21:08:29.020 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  250 | mle_loss: 6.738668 | cl_loss: 5.248281 | loss: 32.980076
+2022-07-26 21:08:36.388 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  300 | mle_loss: 6.920138 | cl_loss: 5.163360 | loss: 32.736935
+2022-07-26 21:08:43.669 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  350 | mle_loss: 6.644360 | cl_loss: 5.285184 | loss: 33.070282
+2022-07-26 21:08:51.056 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  400 | mle_loss: 6.572040 | cl_loss: 5.155925 | loss: 32.351665
+2022-07-26 21:08:58.304 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  450 | mle_loss: 5.796060 | cl_loss: 5.063395 | loss: 31.113039
+2022-07-26 21:09:05.918 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  500 | mle_loss: 6.020110 | cl_loss: 5.248991 | loss: 32.265064
+2022-07-26 21:09:13.200 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  550 | mle_loss: 5.831958 | cl_loss: 5.215964 | loss: 31.911777
+2022-07-26 21:09:20.524 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  600 | mle_loss: 6.038535 | cl_loss: 5.400527 | loss: 33.041176
+2022-07-26 21:09:27.741 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  650 | mle_loss: 5.658380 | cl_loss: 5.317286 | loss: 32.244808
+2022-07-26 21:09:35.097 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  700 | mle_loss: 5.065229 | cl_loss: 5.242138 | loss: 31.275927
+2022-07-26 21:09:42.338 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  750 | mle_loss: 5.496906 | cl_loss: 5.201818 | loss: 31.505993
+2022-07-26 21:09:49.787 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  800 | mle_loss: 5.247032 | cl_loss: 5.264697 | loss: 31.570515
+2022-07-26 21:09:57.028 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  850 | mle_loss: 4.847295 | cl_loss: 5.224144 | loss: 30.968018
+2022-07-26 21:10:04.629 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  900 | mle_loss: 5.149903 | cl_loss: 5.275639 | loss: 31.528097
+2022-07-26 21:10:12.200 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  950 | mle_loss: 5.423766 | cl_loss: 5.120590 | loss: 31.026716
+2022-07-26 21:10:19.512 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 1000 | mle_loss: 5.567979 | cl_loss: 5.171075 | loss: 31.423349
+2022-07-26 21:10:26.748 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 1050 | mle_loss: 5.172098 | cl_loss: 5.103005 | loss: 30.687128
+2022-07-26 21:10:34.107 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 1100 | mle_loss: 4.973909 | cl_loss: 4.925760 | loss: 29.602713

@@ -1,0 +1,158 @@
+2022-07-26 19:51:33.378 | INFO     | config:print_args:49 - K = 1024
+2022-07-26 19:51:33.381 | INFO     | config:print_args:49 - T = 0.07
+2022-07-26 19:51:33.383 | INFO     | config:print_args:49 - adam_epsilon = 1e-08
+2022-07-26 19:51:33.386 | INFO     | config:print_args:49 - alpha = 5
+2022-07-26 19:51:33.388 | INFO     | config:print_args:49 - bart_lr = 0.0001
+2022-07-26 19:51:33.390 | INFO     | config:print_args:49 - batch_size = 4
+2022-07-26 19:51:33.393 | INFO     | config:print_args:49 - checkpoint_path = checkpoints/
+2022-07-26 19:51:33.395 | INFO     | config:print_args:49 - chunk_nums = 30
+2022-07-26 19:51:33.399 | INFO     | config:print_args:49 - content_max_len = 152
+2022-07-26 19:51:33.401 | INFO     | config:print_args:49 - data_dir = data/
+2022-07-26 19:51:33.401 | INFO     | config:print_args:49 - epochs = 1
+2022-07-26 19:51:33.406 | INFO     | config:print_args:49 - eval_interval = 2500
+2022-07-26 19:51:33.408 | INFO     | config:print_args:49 - generate_max_len = 70
+2022-07-26 19:51:33.415 | INFO     | config:print_args:49 - gradient_accumulation_steps = 4
+2022-07-26 19:51:33.420 | INFO     | config:print_args:49 - json_path = bart-base-chinese/config.json
+2022-07-26 19:51:33.423 | INFO     | config:print_args:49 - log_interval = 50
+2022-07-26 19:51:33.426 | INFO     | config:print_args:49 - log_path = logs/
+2022-07-26 19:51:33.429 | INFO     | config:print_args:49 - m = 0.999
+2022-07-26 19:51:33.434 | INFO     | config:print_args:49 - max_clip_norm = 1.0
+2022-07-26 19:51:33.436 | INFO     | config:print_args:49 - max_len = 184
+2022-07-26 19:51:33.440 | INFO     | config:print_args:49 - mlp = False
+2022-07-26 19:51:33.442 | INFO     | config:print_args:49 - pooling = last-avg
+2022-07-26 19:51:33.446 | INFO     | config:print_args:49 - pretrained_model_path = bart-base-chinese/
+2022-07-26 19:51:33.448 | INFO     | config:print_args:49 - repetition_penalty = 1.2
+2022-07-26 19:51:33.450 | INFO     | config:print_args:49 - save_settings = <bound method Args.save_settings of {'data_dir': 'data/', 'pretrained_model_path': 'bart-base-chinese/', 'vocab_path': 'bart-base-chinese/', 'json_path': 'bart-base-chinese/config.json', 'checkpoint_path': 'checkpoints/', 'log_path': 'logs/', 'seed': 2020, 'batch_size': 4, 'max_len': 184, 'content_max_len': 152, 'summary_max_len': 32, 'epochs': 1, 'bart_lr': 0.0001, 'warmup_steps': 10000, 'weight_decay': 0.01, 'adam_epsilon': 1e-08, 'max_clip_norm': 1.0, 'gradient_accumulation_steps': 4, 'eval_interval': 2500, 'log_interval': 50, 'alpha': 5, 'K': 1024, 'm': 0.999, 'T': 0.07, 'mlp': False, 'pooling': 'last-avg', 'chunk_nums': 30, 'generate_max_len': 70, 'repetition_penalty': 1.2, 'top_k': 5, 'top_p': 0.95}>
+2022-07-26 19:51:33.452 | INFO     | config:print_args:49 - seed = 2020
+2022-07-26 19:51:33.455 | INFO     | config:print_args:49 - summary_max_len = 32
+2022-07-26 19:51:33.458 | INFO     | config:print_args:49 - top_k = 5
+2022-07-26 19:51:33.460 | INFO     | config:print_args:49 - top_p = 0.95
+2022-07-26 19:51:33.462 | INFO     | config:print_args:49 - vocab_path = bart-base-chinese/
+2022-07-26 19:51:33.465 | INFO     | config:print_args:49 - warmup_steps = 10000
+2022-07-26 19:51:33.467 | INFO     | config:print_args:49 - weight_decay = 0.01
+2022-07-26 19:51:35.863 | INFO     | __main__:train:65 - 
+
+2022-07-26 19:51:35.866 | INFO     | __main__:train:66 - ***** Running training *****
+2022-07-26 19:51:35.868 | INFO     | __main__:train:67 -   Num Epochs = 1
+2022-07-26 19:51:35.871 | INFO     | __main__:train:69 -   Total train batch size (w. parallel, distributed & accumulation) = 4
+2022-07-26 19:51:35.872 | INFO     | __main__:train:70 -   Type of optimizer = AdamW
+2022-07-26 19:51:35.875 | INFO     | __main__:train:72 -   Learning rate = 0.0001
+2022-07-26 19:51:35.878 | INFO     | __main__:train:73 - 
+
+2022-07-26 19:51:35.882 | INFO     | processing.dataset:_load_and_cache_examples:43 - Loading examples from cache file data/cache/train_set/train_0.pkl
+2022-07-26 19:51:38.719 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:    0 | mle_loss: 4.848139 | cl_loss: 4.961254 | loss: 29.654409
+2022-07-26 19:51:46.235 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:   50 | mle_loss: 6.860234 | cl_loss: 5.343948 | loss: 33.579979
+2022-07-26 19:51:53.611 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  100 | mle_loss: 6.958094 | cl_loss: 5.380522 | loss: 33.860699
+2022-07-26 19:52:00.818 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  150 | mle_loss: 6.868782 | cl_loss: 5.389771 | loss: 33.817635
+2022-07-26 19:52:08.394 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  200 | mle_loss: 6.727909 | cl_loss: 5.267119 | loss: 33.063515
+2022-07-26 19:52:16.059 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  250 | mle_loss: 6.738668 | cl_loss: 5.248281 | loss: 32.980076
+2022-07-26 19:52:23.610 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  300 | mle_loss: 6.920138 | cl_loss: 5.163360 | loss: 32.736935
+2022-07-26 19:52:31.051 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  350 | mle_loss: 6.644360 | cl_loss: 5.285184 | loss: 33.070282
+2022-07-26 19:52:38.397 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  400 | mle_loss: 6.572040 | cl_loss: 5.155925 | loss: 32.351665
+2022-07-26 19:52:45.605 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  450 | mle_loss: 5.796060 | cl_loss: 5.063395 | loss: 31.113039
+2022-07-26 19:52:52.964 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  500 | mle_loss: 6.020110 | cl_loss: 5.248991 | loss: 32.265064
+2022-07-26 19:53:00.189 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  550 | mle_loss: 5.831958 | cl_loss: 5.215964 | loss: 31.911777
+2022-07-26 19:53:07.580 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  600 | mle_loss: 6.038535 | cl_loss: 5.400527 | loss: 33.041176
+2022-07-26 19:53:15.063 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  650 | mle_loss: 5.658380 | cl_loss: 5.317286 | loss: 32.244808
+2022-07-26 19:53:22.385 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  700 | mle_loss: 5.065229 | cl_loss: 5.242138 | loss: 31.275927
+2022-07-26 19:53:29.673 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  750 | mle_loss: 5.496906 | cl_loss: 5.201818 | loss: 31.505993
+2022-07-26 19:53:36.967 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  800 | mle_loss: 5.247032 | cl_loss: 5.264697 | loss: 31.570515
+2022-07-26 19:53:44.149 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  850 | mle_loss: 4.847295 | cl_loss: 5.224144 | loss: 30.968018
+2022-07-26 19:53:51.434 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  900 | mle_loss: 5.149903 | cl_loss: 5.275639 | loss: 31.528097
+2022-07-26 19:53:58.654 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step:  950 | mle_loss: 5.423766 | cl_loss: 5.120590 | loss: 31.026716
+2022-07-26 19:54:05.958 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 1000 | mle_loss: 5.567979 | cl_loss: 5.171075 | loss: 31.423349
+2022-07-26 19:54:12.803 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 1050 | mle_loss: 5.172098 | cl_loss: 5.103005 | loss: 30.687128
+2022-07-26 19:54:19.081 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 1100 | mle_loss: 4.973909 | cl_loss: 4.925760 | loss: 29.602713
+2022-07-26 19:54:25.247 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 1150 | mle_loss: 5.282050 | cl_loss: 4.897907 | loss: 29.771584
+2022-07-26 19:54:31.380 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 1200 | mle_loss: 5.447536 | cl_loss: 4.819907 | loss: 29.547071
+2022-07-26 19:54:37.464 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 1250 | mle_loss: 5.489156 | cl_loss: 4.650939 | loss: 28.743849
+2022-07-26 19:54:43.606 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 1300 | mle_loss: 5.773925 | cl_loss: 4.641147 | loss: 28.979654
+2022-07-26 19:54:49.637 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 1350 | mle_loss: 5.377231 | cl_loss: 4.428510 | loss: 27.519793
+2022-07-26 19:54:55.789 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 1400 | mle_loss: 5.124608 | cl_loss: 4.409541 | loss: 27.172316
+2022-07-26 19:55:01.884 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 1450 | mle_loss: 5.396504 | cl_loss: 4.324208 | loss: 27.017538
+2022-07-26 19:55:08.011 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 1500 | mle_loss: 4.997556 | cl_loss: 4.186357 | loss: 25.929340
+2022-07-26 19:55:14.094 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 1550 | mle_loss: 5.542893 | cl_loss: 4.263566 | loss: 26.860729
+2022-07-26 19:55:20.285 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 1600 | mle_loss: 5.511438 | cl_loss: 4.289436 | loss: 26.958614
+2022-07-26 19:55:26.460 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 1650 | mle_loss: 5.420556 | cl_loss: 4.075649 | loss: 25.798811
+2022-07-26 19:55:32.603 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 1700 | mle_loss: 5.417547 | cl_loss: 3.937206 | loss: 25.103584
+2022-07-26 19:55:38.690 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 1750 | mle_loss: 5.395962 | cl_loss: 3.912179 | loss: 24.956860
+2022-07-26 19:55:44.881 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 1800 | mle_loss: 5.276289 | cl_loss: 3.992549 | loss: 25.239035
+2022-07-26 19:55:50.944 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 1850 | mle_loss: 5.433134 | cl_loss: 3.806039 | loss: 24.463327
+2022-07-26 19:55:57.135 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 1900 | mle_loss: 5.209475 | cl_loss: 3.706507 | loss: 23.742008
+2022-07-26 19:56:03.203 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 1950 | mle_loss: 4.868254 | cl_loss: 3.825836 | loss: 23.997433
+2022-07-26 19:56:09.337 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 2000 | mle_loss: 5.279223 | cl_loss: 3.684481 | loss: 23.701630
+2022-07-26 19:56:15.409 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 2050 | mle_loss: 5.240601 | cl_loss: 3.661708 | loss: 23.549141
+2022-07-26 19:56:21.545 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 2100 | mle_loss: 5.046307 | cl_loss: 3.625726 | loss: 23.174944
+2022-07-26 19:56:27.634 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 2150 | mle_loss: 5.307137 | cl_loss: 3.582646 | loss: 23.220371
+2022-07-26 19:56:34.176 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 2200 | mle_loss: 5.214617 | cl_loss: 3.572999 | loss: 23.079609
+2022-07-26 19:56:40.291 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 2250 | mle_loss: 4.948149 | cl_loss: 3.550152 | loss: 22.698908
+2022-07-26 19:56:46.434 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 2300 | mle_loss: 5.410259 | cl_loss: 3.491968 | loss: 22.870096
+2022-07-26 19:56:52.536 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 2350 | mle_loss: 5.021132 | cl_loss: 3.502391 | loss: 22.533092
+2022-07-26 19:56:58.713 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 2400 | mle_loss: 5.230190 | cl_loss: 3.476609 | loss: 22.613237
+2022-07-26 19:57:04.753 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 2450 | mle_loss: 5.148125 | cl_loss: 3.572501 | loss: 23.010630
+2022-07-26 19:57:10.890 | INFO     | __main__:evaluate:177 - Generating...
+2022-07-26 20:01:52.328 | INFO     | __main__:evaluate:187 - Generation finished.
+2022-07-26 20:01:52.330 | INFO     | __main__:evaluate:194 - Rouge scores: {'rouge-1': 0.2319, 'rouge-2': 0.1025, 'rouge-l': 0.1878}
+2022-07-26 20:01:52.332 | INFO     | __main__:train:136 - Eval loss: 0.0, the best loss: {'loss': 0.0, 'epoch': 0, 'step': 2499}
+2022-07-26 20:01:52.334 | INFO     | __main__:train:137 - Rouge scores: {'rouge-1': 0.2319, 'rouge-2': 0.1025, 'rouge-l': 0.1878, 'epoch': 0, 'step': 2499}, the best scores: {'rouge-1': 0.2319, 'rouge-2': 0.1025, 'rouge-l': 0.1878, 'epoch': 0, 'step': 2499}
+2022-07-26 20:01:52.336 | INFO     | __main__:train:142 - Saving model checkpoint to checkpoints/MoCoBart-0-0-2499
+2022-07-26 20:01:53.191 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 2500 | mle_loss: 5.202354 | cl_loss: 3.315413 | loss: 21.779415
+2022-07-26 20:02:00.481 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 2550 | mle_loss: 4.890246 | cl_loss: 3.418518 | loss: 21.982841
+2022-07-26 20:02:08.041 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 2600 | mle_loss: 5.056131 | cl_loss: 3.390206 | loss: 22.007162
+2022-07-26 20:02:15.349 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 2650 | mle_loss: 5.123751 | cl_loss: 3.330132 | loss: 21.774414
+2022-07-26 20:02:22.693 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 2700 | mle_loss: 5.226892 | cl_loss: 3.303745 | loss: 21.745617
+2022-07-26 20:02:29.910 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 2750 | mle_loss: 5.405075 | cl_loss: 3.266005 | loss: 21.735098
+2022-07-26 20:02:37.201 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 2800 | mle_loss: 5.299235 | cl_loss: 3.274827 | loss: 21.673370
+2022-07-26 20:02:44.417 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 2850 | mle_loss: 5.088166 | cl_loss: 3.370415 | loss: 21.940243
+2022-07-26 20:02:51.693 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 2900 | mle_loss: 4.773932 | cl_loss: 3.284436 | loss: 21.196114
+2022-07-26 20:02:58.887 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 2950 | mle_loss: 4.883132 | cl_loss: 3.248009 | loss: 21.123177
+2022-07-26 20:03:06.309 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 3000 | mle_loss: 4.731972 | cl_loss: 3.144894 | loss: 20.456446
+2022-07-26 20:03:13.720 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 3050 | mle_loss: 5.337302 | cl_loss: 3.302153 | loss: 21.848066
+2022-07-26 20:03:20.976 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 3100 | mle_loss: 4.656064 | cl_loss: 3.133659 | loss: 20.324358
+2022-07-26 20:03:28.190 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 3150 | mle_loss: 5.259231 | cl_loss: 3.232261 | loss: 21.420536
+2022-07-26 20:03:35.433 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 3200 | mle_loss: 4.940488 | cl_loss: 3.166513 | loss: 20.773054
+2022-07-26 20:03:42.668 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 3250 | mle_loss: 4.786644 | cl_loss: 3.274671 | loss: 21.160000
+2022-07-26 20:03:49.978 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 3300 | mle_loss: 4.814605 | cl_loss: 3.034970 | loss: 19.989454
+2022-07-26 20:03:57.181 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 3350 | mle_loss: 4.762955 | cl_loss: 3.223006 | loss: 20.877983
+2022-07-26 20:04:04.440 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 3400 | mle_loss: 5.111417 | cl_loss: 2.981295 | loss: 20.017897
+2022-07-26 20:04:11.560 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 3450 | mle_loss: 4.821956 | cl_loss: 3.126261 | loss: 20.453255
+2022-07-26 20:04:17.953 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 3500 | mle_loss: 4.923033 | cl_loss: 3.080664 | loss: 20.326353
+2022-07-26 20:04:23.979 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 3550 | mle_loss: 4.814374 | cl_loss: 3.013596 | loss: 19.882353
+2022-07-26 20:04:30.125 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 3600 | mle_loss: 4.788953 | cl_loss: 3.016988 | loss: 19.873892
+2022-07-26 20:04:36.195 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 3650 | mle_loss: 4.909275 | cl_loss: 3.087495 | loss: 20.346752
+2022-07-26 20:04:42.519 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 3700 | mle_loss: 5.111326 | cl_loss: 2.927355 | loss: 19.748098
+2022-07-26 20:04:48.800 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 3750 | mle_loss: 5.108393 | cl_loss: 2.912775 | loss: 19.672266
+2022-07-26 20:04:54.957 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 3800 | mle_loss: 4.930274 | cl_loss: 2.924983 | loss: 19.555187
+2022-07-26 20:05:01.086 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 3850 | mle_loss: 4.974317 | cl_loss: 2.872201 | loss: 19.335321
+2022-07-26 20:05:07.218 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 3900 | mle_loss: 4.614126 | cl_loss: 2.916337 | loss: 19.195814
+2022-07-26 20:05:13.301 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 3950 | mle_loss: 4.366082 | cl_loss: 2.854321 | loss: 18.637693
+2022-07-26 20:05:19.728 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 4000 | mle_loss: 4.799515 | cl_loss: 2.841385 | loss: 19.006443
+2022-07-26 20:05:25.881 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 4050 | mle_loss: 4.963703 | cl_loss: 2.756452 | loss: 18.745966
+2022-07-26 20:05:32.307 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 4100 | mle_loss: 4.582773 | cl_loss: 2.625599 | loss: 17.710766
+2022-07-26 20:05:38.709 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 4150 | mle_loss: 4.916980 | cl_loss: 2.778869 | loss: 18.811325
+2022-07-26 20:05:45.194 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 4200 | mle_loss: 5.246636 | cl_loss: 2.768025 | loss: 19.086767
+2022-07-26 20:05:51.490 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 4250 | mle_loss: 5.016641 | cl_loss: 2.748046 | loss: 18.756872
+2022-07-26 20:05:57.897 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 4300 | mle_loss: 4.451615 | cl_loss: 2.676109 | loss: 17.832159
+2022-07-26 20:06:04.133 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 4350 | mle_loss: 4.749471 | cl_loss: 2.548848 | loss: 17.493708
+2022-07-26 20:06:10.514 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 4400 | mle_loss: 4.937485 | cl_loss: 2.517229 | loss: 17.523630
+2022-07-26 20:06:16.754 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 4450 | mle_loss: 4.547169 | cl_loss: 2.499524 | loss: 17.044786
+2022-07-26 20:06:23.119 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 4500 | mle_loss: 5.191521 | cl_loss: 2.602081 | loss: 18.201925
+2022-07-26 20:06:29.627 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 4550 | mle_loss: 4.879353 | cl_loss: 2.545342 | loss: 17.606060
+2022-07-26 20:06:35.966 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 4600 | mle_loss: 4.980625 | cl_loss: 2.394949 | loss: 16.955370
+2022-07-26 20:06:42.218 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 4650 | mle_loss: 4.879200 | cl_loss: 2.528785 | loss: 17.523123
+2022-07-26 20:06:48.515 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 4700 | mle_loss: 4.339083 | cl_loss: 2.439681 | loss: 16.537491
+2022-07-26 20:06:54.698 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 4750 | mle_loss: 4.935580 | cl_loss: 2.311839 | loss: 16.494776
+2022-07-26 20:07:01.070 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 4800 | mle_loss: 4.608758 | cl_loss: 2.497306 | loss: 17.095287
+2022-07-26 20:07:07.323 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 4850 | mle_loss: 4.681125 | cl_loss: 2.449122 | loss: 16.926735
+2022-07-26 20:07:13.722 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 4900 | mle_loss: 4.322677 | cl_loss: 2.356220 | loss: 16.103781
+2022-07-26 20:07:19.986 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 4950 | mle_loss: 4.548548 | cl_loss: 2.280841 | loss: 15.952748
+2022-07-26 20:07:26.233 | INFO     | __main__:evaluate:177 - Generating...
+2022-07-26 20:12:16.008 | INFO     | __main__:evaluate:187 - Generation finished.
+2022-07-26 20:12:16.011 | INFO     | __main__:evaluate:194 - Rouge scores: {'rouge-1': 0.2243, 'rouge-2': 0.0987, 'rouge-l': 0.1852}
+2022-07-26 20:12:16.013 | INFO     | __main__:train:136 - Eval loss: 0.0, the best loss: {'loss': 0.0, 'epoch': 0, 'step': 2499}
+2022-07-26 20:12:16.015 | INFO     | __main__:train:137 - Rouge scores: {'rouge-1': 0.2243, 'rouge-2': 0.0987, 'rouge-l': 0.1852}, the best scores: {'rouge-1': 0.2319, 'rouge-2': 0.1025, 'rouge-l': 0.1878, 'epoch': 0, 'step': 2499}
+2022-07-26 20:12:16.017 | INFO     | __main__:train:142 - Saving model checkpoint to checkpoints/MoCoBart-0-0-4999
+2022-07-26 20:12:16.975 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 5000 | mle_loss: 4.658776 | cl_loss: 2.295990 | loss: 16.138731
+2022-07-26 20:12:24.166 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 5050 | mle_loss: 4.642848 | cl_loss: 2.304234 | loss: 16.164017
+2022-07-26 20:12:31.609 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 5100 | mle_loss: 4.448330 | cl_loss: 2.178768 | loss: 15.342172
+2022-07-26 20:12:38.937 | INFO     | __main__:train:119 - Epoch:  0 | Chunk:  0 | step: 5150 | mle_loss: 4.573859 | cl_loss: 2.389372 | loss: 16.520721
